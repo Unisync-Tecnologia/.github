@@ -1,0 +1,25 @@
+name: "✨ Sugerir Nova Função / Melhoria"
+description: "Proponha uma nova ideia ou melhoria para as nossas soluções."
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tem uma ideia para tornar o nossos sistemas ainda melhor? Conta para a gente!
+  - type: textarea
+    id: ideia
+    attributes:
+      label: "🎯 Qual é a sua sugestão?"
+      description: "Explique a nova funcionalidade ou a melhoria que você gostaria de ver."
+      placeholder: "Ex: Seria ótimo ter um filtro por data de nascimento na tela de busca do paciente."
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: "💡 Por que isso é importante?"
+      description: "Como isso ajuda o dia a dia da clínica, do médico ou do paciente?"
+      placeholder: "Ex: Ajuda as secretárias a acharem pacientes com o mesmo nome de forma mais rápida."
+    validations:
+      required: true
