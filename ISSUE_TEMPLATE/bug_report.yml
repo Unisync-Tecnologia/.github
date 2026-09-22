@@ -1,0 +1,34 @@
+name: "🐛 Relatar um Bug"
+description: "Crie um relatório para nos ajudar a identificar e corrigir um erro no sistema."
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por nos ajudar a melhorar o sistema! Por favor, preencha os campos abaixo de forma simples.
+  - type: textarea
+    id: descricao
+    attributes:
+      label: "📝 O que está acontecendo?"
+      description: "Descreva o comportamento incorreto que você observou."
+      placeholder: "Ex: Ao clicar no botão de imprimir etiqueta, o sistema fica carregando infinito e não imprime a etiqueta."
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: "👣 Passo a passo para reproduzir"
+      description: "O que precisamos clicar ou fazer para ver o erro acontecer?"
+      placeholder: |
+        1. Acesse o menu Exames
+        2. Clique em 'Ver Exames'
+        3. Tente clicar em 'Imprimir'
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: "💻 Informações adicionais (Opcional)"
+      description: "Algum print do erro, mensagem do sistema ou navegador utilizado?"
+
